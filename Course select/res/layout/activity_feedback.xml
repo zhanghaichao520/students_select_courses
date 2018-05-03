@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/main_head" />
+
+    <EditText
+        android:id="@+id/feedBackText"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/include1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:ems="10"
+        android:gravity="left|top"
+        android:hint="请输入你的建议和意见"
+        android:inputType="textMultiLine"
+        android:padding="8dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/slategray1"
+        android:onClick="feedback"
+        android:padding="10dp"
+        android:text="发送反馈"
+        android:textSize="20sp" />
+
+</RelativeLayout>
